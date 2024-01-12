@@ -3,6 +3,9 @@
 
 <template>
   <div class="homepage-container">
+    <div class="bg-img">
+      <img src="" alt="" srcset="">
+    </div>
     <div class="login-text">Login as</div>
     <div class="homepage-btns">
       <v-btn variant="tonal">user</v-btn>
@@ -15,12 +18,12 @@
 .homepage-container {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  color: white;
 }
 
 .login-text {
