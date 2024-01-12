@@ -3,13 +3,13 @@
 
 <template>
   <div class="homepage-container">
-    <div class="bg-img">
-      <img src="" alt="" srcset="">
-    </div>
-    <div class="login-text">Login as</div>
-    <div class="homepage-btns">
-      <v-btn variant="tonal">user</v-btn>
-      <v-btn variant="tonal">admin</v-btn>
+    <img src="../assets/images/bg-main.jpg" alt="" srcset="" class="bg-img">
+    <div class="homepage-content">
+      <div class="login-text">LOGIN AS</div>
+        <div class="homepage-btns">
+          <v-btn variant="tonal">user</v-btn>
+          <v-btn variant="tonal">admin</v-btn>
+        </div>
     </div>
   </div>
 </template>
@@ -23,11 +23,23 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  color: white;
+  color: whitesmoke;
 }
 
-.login-text {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.bg-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(40%) blur(2px);
+}
+.homepage-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .homepage-btns {
