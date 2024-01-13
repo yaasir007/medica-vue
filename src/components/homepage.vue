@@ -31,7 +31,7 @@
   height: 100vh;
   object-fit: cover;
   position: relative;
-  filter: brightness(40%) blur(2px);
+  filter: brightness(40%) blur(3px);
 }
 .homepage-content {
   position: absolute;
