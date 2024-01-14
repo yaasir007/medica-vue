@@ -7,8 +7,8 @@
     <div class="homepage-content">
       <div class="login-text">LOGIN AS</div>
         <div class="homepage-btns">
-          <v-btn variant="tonal">user</v-btn>
-          <v-btn variant="tonal">admin</v-btn>
+          <v-btn variant="tonal" class="homepage-btn">user</v-btn>
+          <v-btn variant="tonal" class="homepage-btn">admin</v-btn>
         </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
   height: 100vh;
   object-fit: cover;
   position: relative;
-  filter: brightness(40%) blur(3px);
+  filter: brightness(40%) blur(4px);
 }
 .homepage-content {
   position: absolute;
@@ -49,5 +49,8 @@
   gap: 2rem;
 }
 
+.homepage-btn {
+  padding-inline: 5rem;
+}
 
 </style>
