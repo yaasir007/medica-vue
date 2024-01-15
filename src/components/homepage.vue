@@ -50,7 +50,7 @@
 }
 
 .homepage-btn {
-  padding-inline: 5rem;
+  padding-inline: 5.5rem;
 }
 
 </style>
