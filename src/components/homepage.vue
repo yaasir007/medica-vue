@@ -5,7 +5,7 @@
   <div class="homepage-container">
     <img src="../assets/images/bg-main.jpg" alt="" srcset="" class="bg-img">
     <div class="homepage-content">
-      <div class="login-text">LOGIN AS</div>
+      <div class="login-text">Welcome to MedPlus</div>
         <div class="homepage-btns">
           <v-btn variant="tonal" class="homepage-btn">user</v-btn>
           <v-btn variant="tonal" class="homepage-btn">admin</v-btn>
