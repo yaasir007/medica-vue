@@ -7,8 +7,8 @@
     <div class="homepage-content">
       <div class="login-text">Welcome to MedPlus</div>
         <div class="homepage-btns">
-          <v-btn variant="tonal" class="homepage-btn">user</v-btn>
-          <v-btn variant="tonal" class="homepage-btn">admin</v-btn>
+          <v-btn variant="tonal" class="homepage-btn">USER</v-btn>
+          <v-btn variant="tonal" class="homepage-btn">ADMIN</v-btn>
         </div>
     </div>
   </div>
