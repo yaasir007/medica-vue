@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Navigation from '../components/Navigation.vue'
+
+const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canova", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
 </script>
 
 <template>
@@ -12,17 +14,11 @@ import Navigation from '../components/Navigation.vue'
       <div class="popular-results">
         <h4>Popular Results</h4>
         <div class="popular-result-btns">
-          <v-btn>Combodart</v-btn>
-          <v-btn>Contiflo</v-btn>
-          <v-btn>Detruisitol</v-btn>
-          <v-btn>Urimax</v-btn>
-          <v-btn>Canova</v-btn>
-          <v-btn>Duron</v-btn>
-          <v-btn>Powergra</v-btn>
-          <v-btn>Silagra</v-btn>
-          <v-btn>Tagra</v-btn>
-          <v-btn>Viagra</v-btn>
-          <v-btn>Neotigason</v-btn>
+          <v-btn
+            v-for="result in popularResults"
+          >
+            {{ result }}
+          </v-btn>
         </div>
       </div>
     </div>
