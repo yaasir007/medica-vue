@@ -4,7 +4,7 @@
 
 <template>
   <div class="nav-container">
-    <p>MEDICA</p>
+    <p><router-link to="/">MEDICA</router-link></p>
   </div>
 </template>
 
@@ -20,6 +20,11 @@
   p {
     font-size: large;
     font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 }
 </style>

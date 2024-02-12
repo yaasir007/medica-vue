@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import Navigation from '../components/Navigation.vue'
+</script>
+
 <template>
-  <h2>Admin page</h2>
+  <Navigation />
+
+  <pre>Admin Page</pre>
 </template>
+
+<style lang="scss" scoped>
+</style>
