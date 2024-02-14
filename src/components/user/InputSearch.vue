@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const emit = defineEmits();
 
 const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canova", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
 const medicineNameInput = ref("");
@@ -8,11 +7,7 @@ const medicineNameInput = ref("");
 const getMedicines = (medicine: any) => {
   console.log(medicine);
   console.log(medicineNameInput.value);
-  // const searchMedicine =
-
-
-  // medicineNameInput.value = medicine;
-  // emit('medicineName', medicineNameInput.value);
+  medicineNameInput.value = medicine;
 }
 </script>
 
