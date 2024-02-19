@@ -40,7 +40,7 @@ const getMedicines = (medicine: any) => {
 }
 
 .user-container {
-  width: 900px;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
