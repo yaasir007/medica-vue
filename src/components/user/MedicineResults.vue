@@ -3,7 +3,9 @@ import { ref } from 'vue'
 import stores from '../../data/stores.json'
 const showSearchResults = ref(true)
 
-
+// get the input search value
+// use it to search in which store the medicine is available
+// show only the stores that holds the medicine 
 </script>
 
 <template>
