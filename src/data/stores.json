@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Store 1",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala"
+    ]
+  },
+  {
+    "name": "Store 2",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "nini"
+    ]
+  },
+  {
+    "name": "Store 3",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "mama"
+    ]
+  },
+  {
+    "name": "Store 4",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "Store 5",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "Store 6",
+    "description": "This works for now",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  }
+]

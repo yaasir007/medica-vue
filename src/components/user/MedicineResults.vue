@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-const showSearchResults = ref(true);
+import { ref } from 'vue'
+import stores from '../../data/stores.json'
+const showSearchResults = ref(true)
+
+
 </script>
 
 <template>
@@ -10,7 +13,7 @@ const showSearchResults = ref(true);
 
       <div class="result-items">
 
-        <div class="item">
+        <div v-for="store in stores" class="item">
           <v-card
             class="mx-auto"
             max-width="344"
@@ -22,11 +25,11 @@ const showSearchResults = ref(true);
             ></v-img>
 
             <v-card-title>
-              Top western road trips
+              {{ store.name }}
             </v-card-title>
 
             <v-card-subtitle>
-              1,000 miles of wonder
+              {{ store.description }}
             </v-card-subtitle>
 
             <v-card-actions>
@@ -39,157 +42,6 @@ const showSearchResults = ref(true);
             </v-card-actions>
           </v-card>
         </div>
-
-        <div class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-
-        <div class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-
-        <div class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-
-        <div class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-
-        <div class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
-            <v-card-subtitle>
-              1,000 miles of wonder
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-
       </div>
     </div>
   </div>
@@ -213,10 +65,9 @@ const showSearchResults = ref(true);
 }
 
 .result-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 
 </style>
