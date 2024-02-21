@@ -5,7 +5,7 @@ const showSearchResults = ref(true)
 
 // get the input search value
 // use it to search in which store the medicine is available
-// show only the stores that holds the medicine 
+// show only the stores that holds the medicine
 </script>
 
 <template>
@@ -70,6 +70,7 @@ const showSearchResults = ref(true)
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 </style>
