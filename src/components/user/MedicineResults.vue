@@ -15,35 +15,28 @@ const showSearchResults = ref(true)
 
       <div class="result-items">
 
-        <div v-for="store in stores" class="item">
-          <v-card
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-              cover
-            ></v-img>
 
-            <v-card-title>
-              {{ store.name }}
-            </v-card-title>
 
-            <v-card-subtitle>
-              {{ store.description }}
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn
-                color="orange-lighten-2"
-                variant="text"
-              >
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+        <div class="result-item">
+          <v-expansion-panels class="mb-6" >
+            <v-expansion-panel
+              v-for="i in stores"
+              :key="i.name"
+            >
+              <v-expansion-panel-title expand-icon="mdi-menu-down">
+                <div class="store-content">
+                  <div class="store-name">{{ i.name }}</div>
+                  <div class="store-description">{{ i.description }}</div>
+                </div>
+              </v-expansion-panel-title>
+              <v-expansion-panel-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-text>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </div>
+
+
+
+
       </div>
     </div>
   </div>
@@ -67,10 +60,18 @@ const showSearchResults = ref(true)
 }
 
 .result-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-bottom: 3rem;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // gap: 1rem;
+  // margin-bottom: 3rem;
+}
+
+.store-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 </style>
