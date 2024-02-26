@@ -5,8 +5,6 @@ const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canov
 const medicineNameInput = ref("");
 
 const getMedicines = (medicine: any) => {
-  console.log(medicine);
-  console.log(medicineNameInput.value);
   medicineNameInput.value = medicine;
 }
 </script>
