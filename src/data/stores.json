@@ -1,7 +1,8 @@
 [
   {
-    "name": "Store 1",
-    "description": "This works for now",
+    "name": "Wellspring Pharmacy",
+    "description": "Evokes a sense of health and abundance, suggesting a reliable source of well-being.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
@@ -10,8 +11,9 @@
     ]
   },
   {
-    "name": "Store 2",
-    "description": "This works for now",
+    "name": "Thrive Rx",
+    "description": "Short, catchy, and uses the abbreviation 'Rx' for easy recognition as a pharmacy.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
@@ -21,8 +23,9 @@
     ]
   },
   {
-    "name": "Store 3",
-    "description": "This works for now",
+    "name": "Cedarwood Health",
+    "description": "Incorporates a natural element and conveys a sense of care and community.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
@@ -32,8 +35,9 @@
     ]
   },
   {
-    "name": "Store 4",
-    "description": "This works for now",
+    "name": "The Remedy Room",
+    "description": "Playful and memorable, suggesting a place where solutions are readily available.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
@@ -43,8 +47,9 @@
     ]
   },
   {
-    "name": "Store 5",
-    "description": "This works for now",
+    "name": "Compass Healthcare",
+    "description": "Implies guidance and comprehensive care, guiding patients on their journey to health.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
@@ -54,8 +59,57 @@
     ]
   },
   {
-    "name": "Store 6",
-    "description": "This works for now",
+    "name": "Serenity Apothecary",
+    "description": "Combines a peaceful feeling with 'apothecary,' a historical term for pharmacy.",
+    "location": "Rue Deforges, Port-Louis",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "Evergreen Wellness",
+    "description": "Suggests lasting health and vitality.",
+    "location": "Rue Deforges, Port-Louis",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "Bloom Pharmacy",
+    "description": "Evokes growth and flourishing, symbolizing improved health.",
+    "location": "Rue Deforges, Port-Louis",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "Clarity Care Pharmacy",
+    "description": "Emphasizes clear communication and patient-centered care.",
+    "location": "Rue Deforges, Port-Louis",
+    "medicines": [
+      "toto",
+      "momo",
+      "kaka",
+      "lala",
+      "haha"
+    ]
+  },
+  {
+    "name": "The Village Chemist",
+    "description": "Creates a sense of familiarity and community, especially for local pharmacies.",
+    "location": "Rue Deforges, Port-Louis",
     "medicines": [
       "toto",
       "momo",
