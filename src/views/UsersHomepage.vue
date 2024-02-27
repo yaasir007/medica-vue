@@ -6,7 +6,7 @@ import MedicineResults from '../components/user/MedicineResults.vue';
 
 const medicineName = ref("");
 
-const handleMedicineName = (data: any) => {
+const handleMedicineName = (data: string) => {
   medicineName.value = data;
 }
 

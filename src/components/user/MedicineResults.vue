@@ -4,28 +4,45 @@ import stores from '../../data/stores.json'
 
 const props = defineProps(['medicineName'])
 const showSearchResults = ref(false)
+let itemsArray:any = ref([])
+
+const handleFilteringStores = () => {
+  let filteredStores:any = [];
+  stores.forEach((store) => {
+    store.medicines.forEach((med) => {
+      if (med.match(props.medicineName)) {
+        filteredStores.push(store)
+      }
+    })
+  })
+  itemsArray.value = filteredStores;
+}
+
+onUpdated(()=> {
+  if (props.medicineName !== "") {
+    showSearchResults.value = true;
+    handleFilteringStores()
+  } else {
+    showSearchResults.value = false;
+  }
+})
 
 // get the input search value
 // use it to search in which store the medicine is available
 // show only the stores that holds the medicine
-
-onUpdated(() => {
-  if (props.medicineName != "") {
-    showSearchResults.value = true;
-  }
-})
 </script>
 
 <template>
   <div class="result-section" v-if="showSearchResults">
     <div class="result-container">
-      <h4 class="result-title">Available Pharmacies With {{ props.medicineName }}</h4>
+      <h4 class="result-title">Available Pharmacies With <i>"{{ props.medicineName }}"</i></h4>
 
       <div class="result-items">
         <div class="result-item">
           <v-expansion-panels class="mb-6 exp-items" >
             <v-expansion-panel
-              v-for="i in stores"
+              v-if="itemsArray.length > 0"
+              v-for="i in itemsArray"
               :key="i.name"
             >
               <v-expansion-panel-title expand-icon="mdi-menu-down">
@@ -36,6 +53,10 @@ onUpdated(() => {
               </v-expansion-panel-title>
               <v-expansion-panel-text>{{ i.description }}</v-expansion-panel-text>
             </v-expansion-panel>
+
+            <div v-else style="margin-top: 1rem; font-size: 1.4rem;">
+              {{ props.medicineName }} is not available
+            </div>
           </v-expansion-panels>
         </div>
       </div>
