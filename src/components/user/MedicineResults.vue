@@ -1,17 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps, onUpdated } from 'vue'
 import stores from '../../data/stores.json'
-const showSearchResults = ref(true)
+
+const props = defineProps(['medicineName'])
+const showSearchResults = ref(false)
 
 // get the input search value
 // use it to search in which store the medicine is available
 // show only the stores that holds the medicine
+
+onUpdated(() => {
+  if (props.medicineName != "") {
+    showSearchResults.value = true;
+  }
+})
 </script>
 
 <template>
   <div class="result-section" v-if="showSearchResults">
     <div class="result-container">
-      <h4 class="result-title">Available Pharmacies With TOTO</h4>
+      <h4 class="result-title">Available Pharmacies With {{ props.medicineName }}</h4>
 
       <div class="result-items">
         <div class="result-item">

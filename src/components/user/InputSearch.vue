@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, defineEmits } from 'vue';
+const emits = defineEmits(['get-medicine'])
 
 const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canova", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
 const medicineNameInput = ref("");
 
 const getMedicines = (medicine: any) => {
   medicineNameInput.value = medicine;
+  emits('get-medicine', medicineNameInput);
 }
 </script>
 
