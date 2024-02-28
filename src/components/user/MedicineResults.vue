@@ -42,8 +42,8 @@ onUpdated(()=> {
           <v-expansion-panels class="mb-6 exp-items" >
             <v-expansion-panel
               v-if="itemsArray.length > 0"
-              v-for="i in itemsArray"
-              :key="i.name"
+              v-for="(i,index) in itemsArray"
+              :key="index"
             >
               <v-expansion-panel-title expand-icon="mdi-menu-down">
                 <div class="store-content">
