@@ -10,11 +10,13 @@ const handleFilteringStores = () => {
   let filteredStores:any = [];
   stores.forEach((store) => {
     store.medicines.forEach((med) => {
+      med = med.toLowerCase();
       if (med.match(props.medicineName)) {
         filteredStores.push(store)
       }
     })
   })
+  filteredStores = [...new Set(filteredStores)];
   itemsArray.value = filteredStores;
 }
 

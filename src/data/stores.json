@@ -3,120 +3,60 @@
     "name": "Wellspring Pharmacy",
     "description": "Evokes a sense of health and abundance, suggesting a reliable source of well-being.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala"
-    ]
+    "medicines": ["Optive", "Hydrogel", "Lumigan", "Gastracid", "Artelac Intense", "Duotrav", "Xalacom", "Ozurdex"]
   },
   {
     "name": "Thrive Rx",
     "description": "Short, catchy, and uses the abbreviation 'Rx' for easy recognition as a pharmacy.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "nini"
-    ]
+    "medicines": ["Esocip", "Artelac Advanced", "Alphagan", "Ganfort", "Hydrogel", "Nexmezol", "Lumigan", "Activated Charcoal Dressings"]
   },
   {
     "name": "Cedarwood Health",
     "description": "Incorporates a natural element and conveys a sense of care and community.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "mama"
-    ]
+    "medicines": ["Nevanac", "Diamox", "Gel Panacea", "Esocip", "Gelules Panacea", "EAB", "Ramdon", "Pansec"]
   },
   {
     "name": "The Remedy Room",
     "description": "Playful and memorable, suggesting a place where solutions are readily available.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Restasis", "Esocip", "Optive", "Indocollyre", "Nexmezol", "Azopt", "Alphagan", "Nevanac"]
   },
   {
     "name": "Compass Healthcare",
     "description": "Implies guidance and comprehensive care, guiding patients on their journey to health.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Xalacom", "Combigan", "Azarga", "Ramdon", "Murine Bright & Moist", "Optive", "Pansec", "Pantoloc"]
   },
   {
     "name": "Serenity Apothecary",
     "description": "Combines a peaceful feeling with 'apothecary,' a historical term for pharmacy.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Simbrinza", "Pansec", "Lacrinorm", "Artelac Intense", "Cellufresh", "Rabemac", "Indocollyre", "Betoptic"]
   },
   {
     "name": "Evergreen Wellness",
     "description": "Suggests lasting health and vitality.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Pansec", "Nexmezol", "Gel Panacea", "Silver Dressings", "Esocip", "Ramdon", "Duotrav", "Eye-Gene"]
   },
   {
     "name": "Bloom Pharmacy",
     "description": "Evokes growth and flourishing, symbolizing improved health.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Duotrav", "Esocip", "Lacrinorm", "Murine Irritation", "Rabemac", "Alphagan", "Gel Panacea", "Timoptol"]
   },
   {
     "name": "Clarity Care Pharmacy",
     "description": "Emphasizes clear communication and patient-centered care.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha",
-      "love"
-    ]
+    "medicines": ["EAB", "Pressure Bandages", "Restasis", "Gel Panacea", "Ozurdex", "Duotrav", "Diamox", "Artelac Intense"]
   },
   {
     "name": "The Village Chemist",
     "description": "Creates a sense of familiarity and community, especially for local pharmacies.",
     "location": "Rue Deforges, Port-Louis",
-    "medicines": [
-      "toto",
-      "momo",
-      "kaka",
-      "lala",
-      "haha"
-    ]
+    "medicines": ["Optive", "Cytotec", "Silver Dressings", "Ozurdex", "Duotrav", "Cellufresh", "Betoptic", "Indocollyre"]
   }
 ]
