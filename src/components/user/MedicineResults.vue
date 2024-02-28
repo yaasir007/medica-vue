@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps, onUpdated } from 'vue'
+import { ref, onUpdated } from 'vue'
 import stores from '../../data/stores.json'
 
 const props = defineProps(['medicineName'])
@@ -37,7 +37,7 @@ onUpdated(()=> {
 <template>
   <div class="result-section" v-if="showSearchResults">
     <div class="result-container">
-      <h4 class="result-title">Available Pharmacies With <i>"{{ props.medicineName }}"</i></h4>
+      <h4 class="result-title">Available Pharmacies With <i>"{{ props.medicineName.toUpperCase() }}"</i></h4>
 
       <div class="result-items">
         <div class="result-item">

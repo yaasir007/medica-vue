@@ -2,15 +2,15 @@
 import { ref } from 'vue';
 const emits = defineEmits(['get-medicine'])
 
-const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canova", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
+const popularResults = ["Optive", "Lumigan", "Esocip", "Urimax", "Lacrinorm", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
 const medicineNameInput = ref("");
 
 const handleMedicines = () => {
-  emits('get-medicine', medicineNameInput.value);
+  emits('get-medicine', medicineNameInput.value.toLowerCase());
 }
 
 const handleButtonMedicine = (data: any) => {
-  medicineNameInput.value = data;
+  medicineNameInput.value = data.toLowerCase();
   handleMedicines();
 }
 
