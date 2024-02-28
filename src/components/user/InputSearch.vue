@@ -1,24 +1,32 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+const emits = defineEmits(['get-medicine'])
 
 const popularResults = ["Combodart", "Contiflo", "Detruisitol", "Urimax", "Canova", "Duron", "Powergra", "Silagra", "Tagra", "Viagra", "Neotigason"]
 const medicineNameInput = ref("");
 
-const getMedicines = (medicine: any) => {
-  medicineNameInput.value = medicine;
+const handleMedicines = () => {
+  emits('get-medicine', medicineNameInput.value);
 }
+
+const handleButtonMedicine = (data: any) => {
+  medicineNameInput.value = data;
+  handleMedicines();
+}
+
+
 </script>
 
 <template>
   <div class="user-section">
     <div class="user-container">
       <h3>Find a pharmacy</h3>
-      <v-text-field label="Please enter the medicine name" v-model="medicineNameInput" @keyup.enter="getMedicines" />
+      <v-text-field label="Please enter the medicine name" v-model="medicineNameInput" @keyup="handleMedicines" />
 
       <div class="popular-results" v-if="!medicineNameInput">
         <h4>Popular Results</h4>
         <div class="popular-result-btns">
-          <v-btn v-for="result in popularResults" @click="getMedicines(result)">
+          <v-btn v-for="result in popularResults" @click="handleButtonMedicine(result)">
             {{ result }}
           </v-btn>
         </div>

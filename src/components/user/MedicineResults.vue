@@ -1,7 +1,33 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps, onUpdated } from 'vue'
 import stores from '../../data/stores.json'
-const showSearchResults = ref(true)
+
+const props = defineProps(['medicineName'])
+const showSearchResults = ref(false)
+let itemsArray:any = ref([])
+
+const handleFilteringStores = () => {
+  let filteredStores:any = [];
+  stores.forEach((store) => {
+    store.medicines.forEach((med) => {
+      med = med.toLowerCase();
+      if (med.match(props.medicineName)) {
+        filteredStores.push(store)
+      }
+    })
+  })
+  filteredStores = [...new Set(filteredStores)];
+  itemsArray.value = filteredStores;
+}
+
+onUpdated(()=> {
+  if (props.medicineName !== "") {
+    showSearchResults.value = true;
+    handleFilteringStores()
+  } else {
+    showSearchResults.value = false;
+  }
+})
 
 // get the input search value
 // use it to search in which store the medicine is available
@@ -11,14 +37,15 @@ const showSearchResults = ref(true)
 <template>
   <div class="result-section" v-if="showSearchResults">
     <div class="result-container">
-      <h4 class="result-title">Available Pharmacies With TOTO</h4>
+      <h4 class="result-title">Available Pharmacies With <i>"{{ props.medicineName }}"</i></h4>
 
       <div class="result-items">
         <div class="result-item">
           <v-expansion-panels class="mb-6 exp-items" >
             <v-expansion-panel
-              v-for="i in stores"
-              :key="i.name"
+              v-if="itemsArray.length > 0"
+              v-for="(i,index) in itemsArray"
+              :key="index"
             >
               <v-expansion-panel-title expand-icon="mdi-menu-down">
                 <div class="store-content">
@@ -28,6 +55,10 @@ const showSearchResults = ref(true)
               </v-expansion-panel-title>
               <v-expansion-panel-text>{{ i.description }}</v-expansion-panel-text>
             </v-expansion-panel>
+
+            <div v-else style="margin-top: 1rem; font-size: 1.4rem;">
+              {{ props.medicineName }} is not available
+            </div>
           </v-expansion-panels>
         </div>
       </div>

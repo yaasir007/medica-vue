@@ -1,14 +1,21 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import Navigation from '../components/shared/Navigation.vue';
 import InputSearch from '../components/user/InputSearch.vue';
 import MedicineResults from '../components/user/MedicineResults.vue';
+
+const medicineName = ref("");
+
+const handleMedicineName = (data: any) => {
+  medicineName.value = data;
+}
 
 </script>
 
 <template>
   <Navigation />
-  <InputSearch />
-  <MedicineResults />
+  <InputSearch @get-medicine="handleMedicineName" />
+  <MedicineResults :medicineName="medicineName" />
 </template>
 
 <style lang="scss" scoped>
