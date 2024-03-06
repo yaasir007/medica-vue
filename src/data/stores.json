@@ -17,7 +17,7 @@
   {
     "name": "Thrive Rx",
     "description": "Short, catchy, and uses the abbreviation 'Rx' for easy recognition as a pharmacy.",
-    "location": "Rue Royale, Port-Louis",
+    "location": "Rue de l'Arsenal, Port-Louis",
     "medicines": [
       "Esocip",
       "Artelac Advanced",
@@ -32,7 +32,7 @@
   {
     "name": "Cedarwood Health",
     "description": "Incorporates a natural element and conveys a sense of care and community.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue George Guibert, Port-Louis",
     "medicines": [
       "Nevanac",
       "Diamox",
@@ -47,7 +47,7 @@
   {
     "name": "The Remedy Room",
     "description": "Playful and memorable, suggesting a place where solutions are readily available.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue Labourdonnais, Port-Louis",
     "medicines": [
       "Restasis",
       "Esocip",
@@ -62,7 +62,7 @@
   {
     "name": "Compass Healthcare",
     "description": "Implies guidance and comprehensive care, guiding patients on their journey to health.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue de l'Intendance, Port-Louis",
     "medicines": [
       "Xalacom",
       "Combigan",
@@ -78,7 +78,7 @@
   {
     "name": "Serenity Apothecary",
     "description": "Combines a peaceful feeling with 'apothecary,' a historical term for pharmacy.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue La Chaussée, Port-Louis",
     "medicines": [
       "Simbrinza",
       "Pansec",
@@ -97,7 +97,7 @@
   {
     "name": "Evergreen Wellness",
     "description": "Suggests lasting health and vitality.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue de Paris, Port-Louis",
     "medicines": [
       "Pansec",
       "Nexmezol",
@@ -116,7 +116,7 @@
   {
     "name": "Bloom Pharmacy",
     "description": "Evokes growth and flourishing, symbolizing improved health.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Rue Soodhy Ramdeo, Port-Louis",
     "medicines": [
       "Duotrav",
       "Esocip",
@@ -131,7 +131,7 @@
   {
     "name": "Clarity Care Pharmacy",
     "description": "Emphasizes clear communication and patient-centered care.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Eid Gah Road, Port-Louis",
     "medicines": [
       "EAB",
       "Pressure Bandages",
@@ -146,7 +146,7 @@
   {
     "name": "The Village Chemist",
     "description": "Creates a sense of familiarity and community, especially for local pharmacies.",
-    "location": "Rue Deforges, Port-Louis",
+    "location": "Royale Road, Port-Louis",
     "medicines": [
       "Optive",
       "Silagra",
