@@ -10,7 +10,7 @@
 
 <style lang="scss" scoped>
 .nav-container {
-  background-color: aliceblue;
+  background-color: rgb(201, 205, 208);
   height: 8vh;
   padding-inline: 2rem;
   display: flex;
