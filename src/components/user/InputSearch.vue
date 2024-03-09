@@ -20,11 +20,11 @@ const handleButtonMedicine = (data: any) => {
 <template>
   <div class="user-section">
     <div class="user-container">
-      <h3>Find a pharmacy</h3>
+      <h3 class="font-bold">Find a pharmacy</h3>
       <v-text-field label="Please enter the medicine name" v-model="medicineNameInput" @keyup="handleMedicines" />
 
       <div class="popular-results" v-if="!medicineNameInput">
-        <h4>Popular Results</h4>
+        <h4 class="font-bold">Popular Results</h4>
         <div class="popular-result-btns">
           <v-btn v-for="result in popularResults" @click="handleButtonMedicine(result)">
             {{ result }}
