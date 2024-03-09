@@ -35,20 +35,20 @@ onUpdated(()=> {
 </script>
 
 <template>
-  <div class="result-section" v-if="showSearchResults">
-    <div class="result-container">
+  <div class="w-full flex justify-center items-center flex-col mt-10" v-if="showSearchResults">
+    <div class="w-[1000px] flex flex-col gap-4">
       <h4 class="result-title">Available Pharmacies With <i>"{{ props.medicineName.toUpperCase() }}"</i></h4>
 
       <div class="result-items">
         <div class="result-item">
-          <v-expansion-panels class="mb-6 exp-items" >
+          <v-expansion-panels class="mb-6 flex gap-1" >
             <v-expansion-panel
               v-if="itemsArray.length > 0"
               v-for="(i,index) in itemsArray"
               :key="index"
             >
               <v-expansion-panel-title expand-icon="mdi-menu-down">
-                <div class="store-content">
+                <div class="w-full flex justify-between items-center gap-8">
                   <div class="store-name">{{ i.name }}</div>
                   <div class="store-description">{{ i.location }}</div>
                 </div>
@@ -67,33 +67,4 @@ onUpdated(()=> {
 </template>
 
 <style lang="scss" scoped>
-.result-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 2.5rem;
-}
-
-.result-container {
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.exp-items {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.store-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-
 </style>
