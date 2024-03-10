@@ -4,8 +4,8 @@ import HomeImage from '../assets/images/bg-main.jpg'
 
 
 <template>
-  <div class="home-container">
-    <div class="home-image">
+  <div class="w-screen h-screen overflow-hidden relative">
+    <div class="absolute bg-cover filter brightness-[0.4] backdrop-filter backdrop-brightness-[80%]">
       <v-img
         :width="1600"
         cover
@@ -13,14 +13,14 @@ import HomeImage from '../assets/images/bg-main.jpg'
       ></v-img>
     </div>
 
-    <div class="home-nav">
-      <pre class="home-welcome">Welcome to Medica</pre>
-      <v-col cols="auto" class="home-btns">
-        <v-btn size="large">
-          <router-link to="/user">Enter As A User</router-link>
+    <div class="absolute [width:inherit] [height:inherit] flex justify-center items-center flex-col">
+      <pre class="text-[2rem] text-[white]">Welcome to Medica</pre>
+      <v-col cols="auto" class="flex gap-6">
+        <v-btn size="large" class="border-[1px] border-[solid] border-[hotpink] text-[0.85rem] tracking-[2px]">
+          <router-link to="/user" class="no-underline text-[black]">Enter As A User</router-link>
         </v-btn>
-        <v-btn size="large">
-          <router-link to="/admin">Enter As A Admin</router-link>
+        <v-btn size="large" class="border-[1px] border-[solid] border-[hotpink] text-[0.85rem] tracking-[2px]">
+          <router-link to="/admin" class="no-underline text-[black]">Enter As A Admin</router-link>
         </v-btn>
       </v-col>
     </div>
