@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import UsersHomePage from '../views/UsersHomepage.vue'
 import AdminHomepageVue from '../views/AdminHomepage.vue'
 import HomepageVue from '../views/Homepage.vue'
+import AddMedicine from '../components/admin/AddMedicine.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -17,6 +18,10 @@ const router = createRouter({
     {
       path: '/admin',
       component: AdminHomepageVue
+    },
+    {
+      path: '/add-medicine',
+      component: AddMedicine
     }
   ]
 })
