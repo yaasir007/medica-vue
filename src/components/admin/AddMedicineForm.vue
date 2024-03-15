@@ -20,6 +20,13 @@ const getLocations = async () => {
   });
 };
 
+const addMedicine = () => {
+  console.log(medName.value)
+  console.log(medDescription.value)
+  console.log(selectedLocations.value)
+
+}
+
 onMounted(async () => {
   await getLocations();
 });
@@ -48,7 +55,7 @@ onMounted(async () => {
           multiple
         ></v-select>
 
-        <v-btn class="mt-2" type="submit" block>Submit</v-btn>
+        <v-btn @click="addMedicine" class="mt-2" type="submit" block :disabled="!medName && !medDescription">Submit</v-btn>
       </v-form>
     </v-sheet>
   </section>

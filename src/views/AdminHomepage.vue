@@ -5,9 +5,20 @@ import Footer from '../components/shared/Footer.vue';
 
 <template>
   <Navigation />
-  <router-link to="/add-medicine" class="no-underline text-[black]">Add Medicine</router-link>
+  <div class="content">
+    <span class="text-lg">Welcome to the Admin Page</span>
+    <router-link class="underline text-[black]" to="/add-medicine">Add Medicine</router-link>
+  </div>
   <Footer />
 </template>
 
 <style lang="scss" scoped>
-</style>
+.content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+</style>../components/admin/SideMenu.vue
