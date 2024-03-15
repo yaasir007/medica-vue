@@ -20,10 +20,6 @@ const getLocations = async () => {
   });
 };
 
-const addMedicine = () => {
-  console.log("fuck");
-};
-
 onMounted(async () => {
   await getLocations();
 });
