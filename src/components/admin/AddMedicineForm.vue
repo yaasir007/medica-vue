@@ -21,11 +21,10 @@ const getLocations = async () => {
 };
 
 const addMedicine = () => {
-  console.log(medName.value)
-  console.log(medDescription.value)
-  console.log(selectedLocations.value)
-
-}
+  console.log(medName.value);
+  console.log(medDescription.value);
+  console.log(selectedLocations.value);
+};
 
 onMounted(async () => {
   await getLocations();
@@ -55,7 +54,19 @@ onMounted(async () => {
           multiple
         ></v-select>
 
-        <v-btn @click="addMedicine" class="mt-2" type="submit" block :disabled="!medName && !medDescription">Submit</v-btn>
+        <div class="flex justify-center align-middle gap-4">
+          <router-link to="/admin" class="bg-yellow">
+            <v-btn class="bg-yellow">Back</v-btn>
+          </router-link>
+
+          <v-btn
+            @click="addMedicine"
+            type="submit"
+            :disabled="!medName && !medDescription"
+            class="bg-green"
+            >Submit</v-btn>
+        </div>
+
       </v-form>
     </v-sheet>
   </section>

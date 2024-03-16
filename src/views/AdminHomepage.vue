@@ -7,7 +7,13 @@ import Footer from '../components/shared/Footer.vue';
   <Navigation />
   <div class="content">
     <span class="text-lg">Welcome to the Admin Page</span>
-    <router-link class="underline text-[black]" to="/add-medicine">Add Medicine</router-link>
+
+
+    <router-link to="/add-medicine">
+      <v-btn block>
+        Add Medicine
+      </v-btn>
+    </router-link>
   </div>
   <Footer />
 </template>
